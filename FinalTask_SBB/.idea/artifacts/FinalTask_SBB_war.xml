@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="FinalTask_SBB:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="FinalTask_SBB-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="FinalTask_SBB:war exploded" />
+    </root>
+  </artifact>
+</component>
