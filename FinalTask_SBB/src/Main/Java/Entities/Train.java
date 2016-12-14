@@ -1,8 +1,6 @@
 package Entities;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
@@ -16,7 +14,8 @@ public class Train extends BaseEntity implements Serializable{
     private List<Place> placeList;
     @OneToMany(mappedBy = "trip")
     private List<Trip> tripList;
-
-
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "Route_Id")
+    private Route route;
 
 }
