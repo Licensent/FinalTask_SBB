@@ -12,10 +12,12 @@ import java.util.List;
 public class Train extends BaseEntity implements Serializable{
     @OneToMany(mappedBy = "train")
     private List<Place> placeList;
-    @OneToMany(mappedBy = "trip")
+    @OneToMany(mappedBy = "train")
     private List<Trip> tripList;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "Route_Id")
     private Route route;
+    @OneToOne(fetch = FetchType.EAGER, mappedBy = "train")
+    private Timetable timetable;
 
 }

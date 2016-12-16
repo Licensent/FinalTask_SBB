@@ -16,5 +16,8 @@ public class Place extends BaseEntity implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "Train_Id")
     private Train train;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "Trip_Id")
+    private Trip trip;
 
 }
