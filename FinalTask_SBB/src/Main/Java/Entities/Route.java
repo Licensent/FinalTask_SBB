@@ -1,9 +1,6 @@
 package Entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
@@ -17,5 +14,13 @@ public class Route extends BaseEntity implements Serializable {
     private int trainAndRouteNumber;
     @OneToMany(mappedBy = "route")
     private List<Train> trainList;
+    @ManyToMany
+    @JoinTable(
+            name = "Route_x_Station",
+            joinColumns = @JoinColumn(name = "Route_Id", referencedColumnName = "Id"),
+            inverseJoinColumns = @JoinColumn(name = "Station_Id", referencedColumnName = "Id"))
+    private List<Station> stationList;
+
+
 
 }

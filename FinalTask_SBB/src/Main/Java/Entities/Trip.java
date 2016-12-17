@@ -16,5 +16,7 @@ public class Trip extends BaseEntity implements Serializable {
 
     @OneToMany(mappedBy = "trip")
     private List<Place> placeList;
+    @ManyToMany(mappedBy = "tripList")
+    private List<Station> stationList;
 
 }
