@@ -3,7 +3,6 @@ package entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import javax.xml.crypto.Data;
 import java.io.Serializable;
 
 /**
@@ -16,13 +15,13 @@ public class Passenger extends BaseEntity implements Serializable {
     private String name;
     @Column(name = "Surname")
     private String surname;
-    @Column(name = "Lastnme")
+    @Column(name = "Lastname")
     private String lastName;
-    @Column(name = "Data")
-    private Data data;
+    //    @Column(name = "Data")
+//    private Data data;
     @Column(name = "Loggin")
     private String loggin;
-    @Column (name = "Password")
+    @Column(name = "Password")
     private String password;
 
     public String getPassword() {
@@ -49,13 +48,13 @@ public class Passenger extends BaseEntity implements Serializable {
         this.lastName = lastName;
     }
 
-    public Data getData() {
-        return data;
-    }
-
-    public void setData(Data data) {
-        this.data = data;
-    }
+//    public Data getData() {
+//        return data;
+//    }
+//
+//    public void setData(Data data) {
+//        this.data = data;
+//    }
 
     public String getLoggin() {
         return loggin;
@@ -71,5 +70,12 @@ public class Passenger extends BaseEntity implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+    public String toString(){
+        return "Name "+name+"\n"+
+                "Surname "+surname+"\n"+
+                "Lastname "+lastName;
+
+
     }
 }

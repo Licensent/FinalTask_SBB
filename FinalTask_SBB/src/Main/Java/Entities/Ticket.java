@@ -23,9 +23,38 @@ public class Ticket extends BaseEntity implements Serializable {
     @JoinColumn(name = "Place_Id")
     private Place trainPlace;
 
+    public Passenger getPassenger() {
+        return passenger;
+    }
 
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
+    }
 
+    public Route getRoute() {
+        return route;
+    }
 
+    public void setRoute(Route route) {
+        this.route = route;
+    }
 
+    public Trip getTrip() {
+        return trip;
+    }
 
+    public void setTrip(Trip trip) {
+        this.trip = trip;
+    }
+
+    public Place getTrainPlace() {
+        return trainPlace;
+    }
+
+    public void setTrainPlace(Place trainPlace) {
+        this.trainPlace = trainPlace;
+    }
+    public String toString(){
+        return "Passenger "+ passenger;
+    }
 }

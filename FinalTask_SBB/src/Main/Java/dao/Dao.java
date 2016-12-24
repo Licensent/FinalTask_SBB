@@ -9,6 +9,6 @@ public interface Dao<T> {
     void add(T type);
     void delete(T type);
     void update(T type);
-    T getObjectById(Long Id);
+    T getObjectById(Long id);
     List<T> getAll();
 }

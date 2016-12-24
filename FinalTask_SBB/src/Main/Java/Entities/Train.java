@@ -1,8 +1,8 @@
 package entities;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * Created by DarthVader on 12.12.2016.
@@ -10,14 +10,14 @@ import java.util.List;
 @Entity
 @Table(name = "Train")
 public class Train extends BaseEntity implements Serializable{
-    @OneToMany(mappedBy = "train")
-    private List<Place> placeList;
-    @OneToMany(mappedBy = "train")
-    private List<Trip> tripList;
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "Route_Id")
-    private Route route;
-    @OneToOne(fetch = FetchType.EAGER, mappedBy = "train")
-    private Timetable timetable;
+//    @OneToMany(mappedBy = "train")
+//    private List<Place> placeList;
+//    @OneToMany(mappedBy = "train")
+//    private List<Trip> tripList;
+//    @ManyToOne(fetch = FetchType.EAGER)
+//    @JoinColumn(name = "Route_Id")
+//    private Route route;
+//    @OneToOne(fetch = FetchType.EAGER, mappedBy = "train")
+//    private Timetable timetable;
 
 }

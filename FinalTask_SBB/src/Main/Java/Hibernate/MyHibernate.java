@@ -7,7 +7,7 @@ import javax.persistence.Persistence;
 /**
  * Created by DarthVader on 18.12.2016.
  */
-public class Hibernate {
+public class MyHibernate {
     private static final String PERSISTENT_UNIT_NAME = "SBB";
 
     private static final EntityManagerFactory emf;
@@ -21,7 +21,7 @@ public class Hibernate {
         }
     }
 
-    public static EntityManager getEmf() {
+    public static EntityManager getEm() {
         return emf.createEntityManager();
     }
 
