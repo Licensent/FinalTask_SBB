@@ -23,6 +23,9 @@ public class Ticket extends BaseEntity implements Serializable {
     @JoinColumn(name = "Place_Id")
     private Place trainPlace;
 
+    public Ticket() {
+    }
+
     public Passenger getPassenger() {
         return passenger;
     }

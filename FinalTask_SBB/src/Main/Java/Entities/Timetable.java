@@ -1,7 +1,6 @@
 package entities;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -14,10 +13,29 @@ public class Timetable extends BaseEntity implements Serializable {
 //    private Data arrive;
 //    @Column(name = "Departure")
 //    private Data departure;
-//    @OneToOne(fetch = FetchType.EAGER)
-//    @JoinColumn(name = "Train_Id")
-//    private Train train;
-//    @ManyToOne(fetch = FetchType.EAGER)
-//    @JoinColumn(name = "Station_Id")
-//    private Station station;
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "Train_Id")
+    private Train train;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "Station_Id")
+    private Station station;
+
+    public Timetable() {
+    }
+
+    public Station getStation() {
+        return station;
+    }
+
+    public void setStation(Station station) {
+        this.station = station;
+    }
+
+    public Train getTrain() {
+        return train;
+    }
+
+    public void setTrain(Train train) {
+        this.train = train;
+    }
 }

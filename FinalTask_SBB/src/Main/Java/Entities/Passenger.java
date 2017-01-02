@@ -24,6 +24,9 @@ public class Passenger extends BaseEntity implements Serializable {
     @Column(name = "Password")
     private String password;
 
+    public Passenger() {
+    }
+
     public String getPassword() {
         return password;
     }
