@@ -1,4 +1,4 @@
-package Hibernate;
+package hibernate;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
