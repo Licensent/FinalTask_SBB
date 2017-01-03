@@ -1,6 +1,6 @@
 package servlets;
 
-import service.AdminServiceForTrain;
+import service.AdminService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,26 +14,29 @@ import java.io.IOException;
  */
 @WebServlet("/pushTrain")
 public class PushServletForTrainPage extends HttpServlet {
+    private AdminService adminTrain = new AdminService();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        AdminServiceForTrain adminTrain = new AdminServiceForTrain();
-        String stringNameTrain = req.getParameter("trainNumber");
-        Integer trainNumber = Integer.parseInt(stringNameTrain);
-        adminTrain.addTrain(trainNumber);
 
-        if (trainNumber.equals(null)){
+        String stringNameTrain = null;
+
+        try {
+            stringNameTrain = req.getParameter("trainNumber");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        if (stringNameTrain == null || stringNameTrain.isEmpty()) {
             req.setAttribute("operationStatus", "The Object hasn't been added. " +
-                    "Please, enter station name again.");
-        }else {
+                    "Please, enter train number again.");
+        } else {
+            Integer trainNumber = Integer.parseInt(stringNameTrain);
+            adminTrain.addTrain(trainNumber);
             req.setAttribute("operationStatus", "The Object has been successfully added.");
 
         }
-
-
         req.getRequestDispatcher("ResponsePage.jsp").forward(req, resp);
-
-
-
     }
 }

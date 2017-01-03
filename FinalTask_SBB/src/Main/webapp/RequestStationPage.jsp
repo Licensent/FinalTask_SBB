@@ -13,7 +13,6 @@
     <form action="/pushStation" method="GET">
         <p>Enter new Station name:
             <input type="text" name="stationName"></p>
-
         <input type="submit" value="add"/>
     </form>
 </head>

@@ -16,6 +16,5 @@ public class RequestServletForTrainPage extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         req.getRequestDispatcher("RequestTrainPage.jsp").forward(req, resp);
-
     }
 }

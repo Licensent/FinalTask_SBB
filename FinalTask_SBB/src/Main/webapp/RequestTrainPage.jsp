@@ -13,7 +13,6 @@
     <form action="/pushTrain" method="GET">
         <p>Enter new train number:
             <input type="number" name="trainNumber"></p>
-
         <input type="submit" value="add"/>
     </form>
 </head>

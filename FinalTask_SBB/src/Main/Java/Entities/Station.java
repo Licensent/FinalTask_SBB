@@ -10,12 +10,16 @@ import java.util.List;
 @Entity
 @Table(name = "Station")
 public class Station extends BaseEntity implements Serializable {
+
     @Column(name = "StationName")
     private String stationName;
+
     @OneToMany(mappedBy = "station")
     private List<Timetable> timetableList;
+
     @ManyToMany(mappedBy = "stationList")
     private List<Route> routeList;
+
     @ManyToMany
     @JoinTable(name = "Sation_x_Trip",
             joinColumns = @JoinColumn(name = "Station_Id", referencedColumnName = "Id"),
@@ -23,7 +27,11 @@ public class Station extends BaseEntity implements Serializable {
     )
     private List<Trip> tripList;
 
-    public Station() {
+    protected Station() {
+    }
+
+    public Station(String stationName) {
+        this.stationName = stationName;
     }
 
     public String getStationName() {

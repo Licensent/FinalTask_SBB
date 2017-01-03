@@ -16,6 +16,5 @@ public class RequestServletForStationPage extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException{
         req.getRequestDispatcher("RequestStationPage.jsp").forward(req, resp);
-
     }
 }

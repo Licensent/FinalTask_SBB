@@ -10,10 +10,13 @@ import java.util.List;
 @Entity
 @Table(name = "Route")
 public class Route extends BaseEntity implements Serializable {
+
     @Column(name = "Train_And_Route_Number")
     private int trainAndRouteNumber;
+
     @OneToMany(mappedBy = "route")
     private List<Train> trainList;
+
     @ManyToMany
     @JoinTable(
             name = "Route_x_Station",
@@ -21,7 +24,11 @@ public class Route extends BaseEntity implements Serializable {
             inverseJoinColumns = @JoinColumn(name = "Station_Id", referencedColumnName = "Id"))
     private List<Station> stationList;
 
-    public Route() {
+    protected Route() {
+    }
+
+    public Route(int trainAndRouteNumber) {
+        this.trainAndRouteNumber = trainAndRouteNumber;
     }
 
     public int getTrainAndRouteNumber() {
