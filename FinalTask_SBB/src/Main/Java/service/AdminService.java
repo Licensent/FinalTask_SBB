@@ -21,6 +21,11 @@ public class AdminService {
         stationDao.add(station);
     }
 
+    public void addRoute(int routeNumber){
+        Route route = new Route(routeNumber);
+        routeDao.add(route);
+    }
+
     public void addTrain(int trainNumber) {
         Route route = new Route(trainNumber);
         Train train = new Train();
