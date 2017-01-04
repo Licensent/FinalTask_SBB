@@ -17,6 +17,7 @@ public class Train extends BaseEntity implements Serializable{
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "Route_Id")
     private Route route;
+//    еще раз подумать  об отношении поезда и расписания
     @OneToOne(fetch = FetchType.EAGER, mappedBy = "train")
     private Timetable timetable;
 

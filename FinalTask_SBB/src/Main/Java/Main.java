@@ -1,8 +1,11 @@
-import hibernate.MyHibernate;
 import dao.PassengerDao;
+import dao.StationDao;
 import dao.TicketDao;
+import dao.TimetableDao;
 import entities.Passenger;
 import entities.Ticket;
+import entities.Timetable;
+import hibernate.MyHibernate;
 
 /**
  * Created by DarthVader on 24.12.2016.
@@ -34,6 +37,13 @@ public class Main {
         ticket2.setPassenger(passenger2);
         ticketDao.add(ticket2);
 //        ticketDao.getTicketByNSL("a", "b", "c");
+
+        StationDao stationDao = new StationDao();
+        System.out.println(stationDao.getStationByName("g"));
+
+        TimetableDao timetableDao = new TimetableDao();
+        Timetable timetable = new Timetable();
+        timetableDao.add(timetable);
 
 
         MyHibernate.close();

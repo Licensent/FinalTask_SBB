@@ -65,4 +65,8 @@ public class Station extends BaseEntity implements Serializable {
     public void setTripList(List<Trip> tripList) {
         this.tripList = tripList;
     }
+
+    public String toString(){
+        return stationName;
+    }
 }
