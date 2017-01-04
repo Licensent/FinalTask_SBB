@@ -1,6 +1,7 @@
 package dao;
 
 import entities.Station;
+import hibernate.MyHibernate;
 
 import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
@@ -10,9 +11,10 @@ import javax.persistence.TypedQuery;
  */
 public class StationDao extends AbstractDao<Station> {
     public Station getStationByName(String stationName) throws NoResultException {
-        manager.getTransaction().begin();
+
         Station station = null;
-        TypedQuery<Station> namedQuery = manager.createQuery("select s from Station s " +
+        TypedQuery<Station> namedQuery = MyHibernate.getEntityManager().
+                createQuery("select s from Station s " +
                 "where s.stationName = :stationParameter ", Station.class);
         namedQuery.setParameter("stationParameter", stationName);
 
@@ -20,10 +22,9 @@ public class StationDao extends AbstractDao<Station> {
             station = namedQuery.getSingleResult();
         } catch (Exception e) {
             e.printStackTrace();
-            manager.getTransaction().rollback();
+
             return null;
         }
-        manager.getTransaction().commit();
         return station;
     }
 }

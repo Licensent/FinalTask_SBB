@@ -2,6 +2,7 @@ package entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Created by DarthVader on 14.12.2016.
@@ -9,10 +10,10 @@ import java.io.Serializable;
 @Entity
 @Table(name = "Timetable")
 public class Timetable extends BaseEntity implements Serializable {
-//    @Column(name = "Arrive")
-//    private Data arrive;
-//    @Column(name = "Departure")
-//    private Data departure;
+    @Column(name = "Arrive")
+    private Date arrive;
+    @Column(name = "Departure")
+    private Date departure;
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "Train_Id")
     private Train train;

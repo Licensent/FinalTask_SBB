@@ -1,9 +1,8 @@
 package dao;
 
-import hibernate.MyHibernate;
 import entities.BaseEntity;
+import hibernate.MyHibernate;
 
-import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -13,8 +12,7 @@ import java.util.List;
  * Created by DarthVader on 20.12.2016.
  */
 public class AbstractDao<T extends BaseEntity> implements Dao<T> {
-    EntityManager manager = MyHibernate.getEm();
-    Class<T> tClass;
+       Class<T> tClass;
 
     public AbstractDao() {
         Type type = getClass().getGenericSuperclass();
@@ -24,9 +22,9 @@ public class AbstractDao<T extends BaseEntity> implements Dao<T> {
 
     public void add(T type) {
         try {
-            manager.getTransaction().begin();
-            manager.persist(type);
-            manager.getTransaction().commit();
+
+            MyHibernate.getEntityManager().persist(type);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -34,9 +32,9 @@ public class AbstractDao<T extends BaseEntity> implements Dao<T> {
 
     public void update(T type) {
         try {
-            manager.getTransaction().begin();
-            manager.merge(type);
-            manager.getTransaction().commit();
+
+            MyHibernate.getEntityManager().merge(type);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -44,10 +42,11 @@ public class AbstractDao<T extends BaseEntity> implements Dao<T> {
 
     public void delete(T type) {
         try {
-            manager.getTransaction().begin();
-            BaseEntity entity = manager.getReference(type.getClass(), type.getId());
-            manager.remove(entity);
-            manager.getTransaction().commit();
+
+            BaseEntity entity = MyHibernate.getEntityManager().
+                    getReference(type.getClass(), type.getId());
+            MyHibernate.getEntityManager().remove(entity);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -57,9 +56,9 @@ public class AbstractDao<T extends BaseEntity> implements Dao<T> {
     public T getObjectById(Long id) {
         T typeClass = null;
         try {
-            manager.getTransaction().begin();
-            typeClass = manager.find(tClass, id);
-            manager.getTransaction().commit();
+
+            typeClass = MyHibernate.getEntityManager().find(tClass, id);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -68,10 +67,11 @@ public class AbstractDao<T extends BaseEntity> implements Dao<T> {
     }
 
     public List<T> getAll() {
-        manager.getTransaction().begin();
-        TypedQuery<T> namedQuery = manager.createNamedQuery("from " + tClass.getName(), tClass);
+
+        TypedQuery<T> namedQuery = MyHibernate.getEntityManager().
+                createNamedQuery("from " + tClass.getName(), tClass);
         List<T> resultList = namedQuery.getResultList();
-        manager.getTransaction().commit();
+
         return resultList;
     }
 }
