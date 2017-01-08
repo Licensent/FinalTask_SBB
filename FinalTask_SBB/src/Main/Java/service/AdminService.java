@@ -11,8 +11,6 @@ import entities.Train;
 import hibernate.MyHibernate;
 
 import javax.persistence.NoResultException;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Created by DarthVader on 02.01.2017.
@@ -26,28 +24,83 @@ public class AdminService {
 
     public void addStation(String stationName) {
         MyHibernate.getEntityTransactionBegin();
-        Station station = new Station(stationName);
-        stationDao.add(station);
-        MyHibernate.getEntityTransactionCommit();
 
+        Station station = null;
+
+        try {
+            if (stationDao.getStationByName(stationName) == null) {
+
+                station = new Station(stationName);
+
+                stationDao.add(station);
+            } else {
+
+                station = stationDao.getStationByName(stationName);
+
+                stationDao.update(station);
+            }
+            MyHibernate.getEntityTransactionCommit();
+        } catch (NoResultException e) {
+            e.printStackTrace();
+            if (MyHibernate.getEntityManager().getTransaction().isActive()) {
+                MyHibernate.getEntityManager().getTransaction().rollback();
+            }
+        }
     }
 
     public void addRoute(int routeNumber) {
         MyHibernate.getEntityTransactionBegin();
-        Route route = new Route(routeNumber);
-        routeDao.add(route);
-        MyHibernate.getEntityTransactionCommit();
+
+        Route route = null;
+
+        try {
+            if (routeDao.getRouteByNumber(routeNumber) == null){
+
+                route = new Route(routeNumber);
+
+                routeDao.add(route);
+            }else{
+                route = routeDao.getRouteByNumber(routeNumber);
+
+                routeDao.update(route);
+            }
+            MyHibernate.getEntityTransactionCommit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            if (MyHibernate.getEntityManager().getTransaction().isActive()){
+                MyHibernate.getEntityManager().getTransaction().rollback();
+            }
+        }
     }
 
     public void addTrain(int trainNumber) {
         MyHibernate.getEntityTransactionBegin();
-        Route route = new Route(trainNumber);
+
         Train train = new Train();
-        route.setTrainAndRouteNumber(trainNumber);
-        routeDao.add(route);
-        train.setRoute(route);
-        trainDao.add(train);
-        MyHibernate.getEntityTransactionCommit();
+        Route route = null;
+
+        try {
+            if (routeDao.getRouteByNumber(trainNumber) == null){
+
+                route = new Route(trainNumber);
+
+                routeDao.add(route);
+                train.setRoute(route);
+                trainDao.add(train);
+            }else{
+
+                route = routeDao.getRouteByNumber(trainNumber);
+
+                train.setRoute(route);
+                trainDao.add(train);
+            }
+            MyHibernate.getEntityTransactionCommit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            if (MyHibernate.getEntityManager().getTransaction().isActive()){
+                MyHibernate.getEntityManager().getTransaction().rollback();
+            }
+        }
     }
 
     public void addTimetable(String timetableForStationName) {
@@ -55,25 +108,21 @@ public class AdminService {
 
         Timetable timetable = new Timetable();
         Station stationName = null;
-        timetableDao.add(timetable);
 
         try {
             if (stationDao.getStationByName(timetableForStationName) == null) {
 
                 stationName = new Station(timetableForStationName);
-                ArrayList<Timetable> timetableList = new ArrayList<>(Arrays.asList(timetable));
-
-                stationName.setTimetableList(timetableList);
                 stationDao.add(stationName);
 
-
+                timetable.setStation(stationName);
+                timetableDao.add(timetable);
             } else {
 
                 stationName = stationDao.getStationByName(timetableForStationName);
-                ArrayList<Timetable> timetableList = new ArrayList<>(Arrays.asList(timetable));
 
-                stationName.setTimetableList(timetableList);
-                stationDao.update(stationName);
+                timetable.setStation(stationName);
+                timetableDao.add(timetable);
             }
             MyHibernate.getEntityTransactionCommit();
         } catch (NoResultException e) {

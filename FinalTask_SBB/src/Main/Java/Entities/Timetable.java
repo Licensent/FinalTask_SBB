@@ -8,7 +8,7 @@ import java.util.Date;
  * Created by DarthVader on 14.12.2016.
  */
 @Entity
-@Table(name = "Timetable")
+@Table(name = "Timetable", uniqueConstraints = @UniqueConstraint(columnNames = {"Arrive", "Departure"}))
 public class Timetable extends BaseEntity implements Serializable {
     @Column(name = "Arrive")
     private Date arrive;

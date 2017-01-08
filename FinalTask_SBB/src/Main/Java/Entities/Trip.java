@@ -13,7 +13,8 @@ public class Trip extends BaseEntity implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "Train_Id")
     private Train train;
-
+    @OneToMany(mappedBy = "trip")
+    private List<Ticket> ticketList;
     @OneToMany(mappedBy = "trip")
     private List<Place> placeList;
     @ManyToMany(mappedBy = "tripList")
