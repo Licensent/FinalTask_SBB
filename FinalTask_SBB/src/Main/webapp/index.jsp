@@ -1,107 +1,43 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]>
-<html lang="en" class="no-js ie6 lt8"> <![endif]-->
-<!--[if IE 7 ]>
-<html lang="en" class="no-js ie7 lt8"> <![endif]-->
-<!--[if IE 8 ]>
-<html lang="en" class="no-js ie8 lt8"> <![endif]-->
-<!--[if IE 9 ]>
-<html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en" class="no-js"> <!--<![endif]-->
+<%--
+  Created by IntelliJ IDEA.
+  User: DarthVader
+  Date: 06.01.2017
+  Time: 16:10
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
-    <meta charset="UTF-8"/>
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
-    <title>Login and Registration Form</title>
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/animate-custom.css"/>
-</head>
+    <title>Main Page</title>
+    <link href="bootstrap/css/bootstrap.css" rel=stylesheet type="text/css">
+    <link href="css/MyStyle.css" rel=stylesheet type="text/css">
+    </head>
+
 <body>
 
-<section>
-    <div id="container_demo">
-        <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
-        <a class="hiddenanchor" id="toregister"></a>
-        <a class="hiddenanchor" id="tologin"></a>
-
-        <div id="wrapper">
-            <div id="login" class="animate form">
-                <form action="mysuperscript.php" autocomplete="on">
-                    <h1>Log in</h1>
-
-                    <p>
-                        <label for="username" class="uname" data-icon="u"> Your email or username </label>
-                        <input id="username" name="username" required="required" type="text"
-                               placeholder="Login or email"/>
-                    </p>
-
-                    <p>
-                        <label for="password" class="youpasswd" data-icon="p"> Your password </label>
-                        <input id="password" name="password" required="required" type="password"
-                               placeholder="Password"/>
-                    </p>
-
-                    <p class="keeplogin">
-                        <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping"/>
-                        <label for="loginkeeping">Keep me logged in</label>
-                    </p>
-
-                    <p class="login button">
-                        <input type="submit" value="Login"/>
-                    </p>
-
-                    <p class="change_link">
-                        Not a member yet ?
-                        <a href="#toregister" class="to_register">Join us</a>
-                    </p>
-                </form>
-            </div>
-
-            <div id="register" class="animate form">
-                <form action="mysuperscript.php" autocomplete="on">
-                    <h1> Sign up </h1>
-
-                    <p>
-                        <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                        <input id="usernamesignup" name="usernamesignup" required="required" type="text"
-                               placeholder="Login"/>
-                    </p>
-
-                    <p>
-                        <label for="emailsignup" class="youmail" data-icon="e"> Your email</label>
-                        <input id="emailsignup" name="emailsignup" required="required" type="email"
-                               placeholder="email"/>
-                    </p>
-
-                    <p>
-                        <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
-                        <input id="passwordsignup" name="passwordsignup" required="required" type="password"
-                               placeholder="Password"/>
-                    </p>
-
-                    <p>
-                        <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your
-                            password </label>
-                        <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required"
-                               type="password" placeholder="Confirm password"/>
-                    </p>
-
-                    <p class="signin button">
-                        <input type="submit" value="Sign up"/>
-                    </p>
-
-                    <p class="change_link">
-                        Already a member ?
-                        <a href="#tologin" class="to_register"> Go and log in </a>
-                    </p>
-                </form>
-            </div>
-
-        </div>
+<div class="home_header">
+    <div id="home_header">
+        <img src="/images/background_header.png" width="253" , height="80"
+             alt="Адрес размещения изображения относительно корня сайта">
     </div>
-</section>
+    <div id="IGRailways_logo">
+        <img src="/images/logo_header.png" alt="IGRailways">
+    </div>
 </div>
+<div class="loginBox">
+    <div id="buttons" class="btn-group">
+        <a href="Login.jsp" class="btn btn-link">Login</a>
+
+        <a href="LoginRegistration.jsp" class="btn btn-link">Join</a>
+    </div>
+</div>
+
+<h2 align="right"><a href="addStation">Station menu</a></h2>
+
+<h2 align="right"><a href="addRoute">Route menu</a></h2>
+
+<h2 align="right"><a href="addTrain">Train menu</a></h2>
+
+<h2 align="right"><a href="addTimetable">Timetable menu</a></h2>
 </body>
 </html>
