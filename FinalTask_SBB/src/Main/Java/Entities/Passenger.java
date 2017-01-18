@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.io.Serializable;
+import java.sql.Date;
 
 /**
  * Created by DarthVader on 11.12.2016.
@@ -17,12 +18,30 @@ public class Passenger extends BaseEntity implements Serializable {
     private String surname;
     @Column(name = "Lastname")
     private String lastName;
-    //    @Column(name = "Data")
-//    private Data data;
-    @Column(name = "Loggin")
-    private String loggin;
+    @Column(name = "Date")
+    private Date date;
+    @Column(name = "Login")
+    private String login;
     @Column(name = "Password")
     private String password;
+    @Column(name = "email")
+    private String email;
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public String getPassword() {
         return password;
@@ -48,20 +67,12 @@ public class Passenger extends BaseEntity implements Serializable {
         this.lastName = lastName;
     }
 
-//    public Data getData() {
-//        return data;
-//    }
-//
-//    public void setData(Data data) {
-//        this.data = data;
-//    }
-
-    public String getLoggin() {
-        return loggin;
+    public String getLogin() {
+        return login;
     }
 
-    public void setLoggin(String loggin) {
-        this.loggin = loggin;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getName() {
