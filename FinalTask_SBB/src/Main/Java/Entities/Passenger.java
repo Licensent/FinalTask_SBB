@@ -43,6 +43,9 @@ public class Passenger extends BaseEntity implements Serializable {
         this.email = email;
     }
 
+    public Passenger() {
+    }
+
     public String getPassword() {
         return password;
     }

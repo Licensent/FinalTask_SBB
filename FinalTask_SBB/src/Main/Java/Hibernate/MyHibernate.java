@@ -20,10 +20,20 @@ public class MyHibernate {
 
         }
     }
+    private static EntityManager entityManager = emf.createEntityManager();
 
-    public static EntityManager getEm() {
-        return emf.createEntityManager();
+    public static EntityManager getEntityManager() {
+        return entityManager;
     }
+
+    public static void getEntityTransactionBegin() {
+        entityManager.getTransaction().begin();
+    }
+
+    public static void getEntityTransactionCommit() {
+        entityManager.getTransaction().commit();
+    }
+
 
     public static void close(){emf.close();}
 }

@@ -27,7 +27,11 @@
 <div class="loginBox">
     <div id="buttons" class="btn-group">
         <a href="Login.jsp" class="btn btn-link">Login</a>
+<<<<<<< HEAD
         <a href="LoginRegistration.jsp" class="btn btn-link">Join</a>
+=======
+        <a href="index.jsp" class="btn btn-link">Join</a>
+>>>>>>> add_new_Methods_in_Adminservice
     </div>
 </div>
 

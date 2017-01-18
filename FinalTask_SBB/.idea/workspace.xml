@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
     <list default="true" id="2479bdd1-0d9a-4aeb-80a0-eade168935f6" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
@@ -10,13 +9,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/Java/Main.java" afterPath="$PROJECT_DIR$/src/Main/Java/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/Java/dao/AbstractDao.java" afterPath="$PROJECT_DIR$/src/Main/Java/dao/AbstractDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/Java/dao/TrainDao.java" afterPath="$PROJECT_DIR$/src/Main/Java/dao/TrainDao.java" />
-=======
-    <list default="true" id="2479bdd1-0d9a-4aeb-80a0-eade168935f6" name="Default" comment="View pages was added.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Main/webapp/Registration.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/Main/webapp/LoginRegistration.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/webapp/MainPage.jsp" afterPath="$PROJECT_DIR$/src/Main/webapp/MainPage.jsp" />
->>>>>>> Stashed changes
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,7 +63,6 @@
       <file leaf-file-name="Station.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Station.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
             <state vertical-scroll-proportion="0.0">
               <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding>
@@ -92,16 +83,10 @@
                 <element signature="e#1439#1440#0" expanded="true" />
                 <element signature="e#1479#1480#0" expanded="true" />
               </folding>
-=======
-            <state vertical-scroll-proportion="-5.193548">
-              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-              <folding />
->>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< Updated upstream
       <file leaf-file-name="Route.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Route.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,44 +105,12 @@
                 <element signature="e#1237#1238#0" expanded="true" />
                 <element signature="e#1283#1284#0" expanded="true" />
               </folding>
-=======
-      <file leaf-file-name="LoginRegistration.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/webapp/LoginRegistration.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-39.741936">
-              <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-              <folding />
->>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< Updated upstream
       <file leaf-file-name="Place.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Place.java">
-=======
-      <file leaf-file-name="Passenger.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Passenger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6819788">
-              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#762#763#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#892#893#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="block.rnc" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/block.rnc">
->>>>>>> Stashed changes
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
@@ -195,13 +148,8 @@
       <file leaf-file-name="Ticket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Ticket.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
             <state vertical-scroll-proportion="0.0">
               <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-=======
-            <state vertical-scroll-proportion="-1.483871">
-              <caret line="202" column="1" selection-start-line="202" selection-start-column="1" selection-end-line="202" selection-end-column="1" />
->>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -252,7 +200,6 @@
         <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Trip.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-<<<<<<< Updated upstream
               <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
                 <element signature="e#574#575#0" expanded="true" />
@@ -266,11 +213,6 @@
                 <element signature="e#898#899#0" expanded="true" />
                 <element signature="e#959#960#0" expanded="true" />
                 <element signature="e#1005#1006#0" expanded="true" />
-=======
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
->>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -279,7 +221,6 @@
       <file leaf-file-name="Timetable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Timetable.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
             <state vertical-scroll-proportion="0.5616622">
               <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding>
@@ -291,12 +232,6 @@
                 <element signature="e#794#795#0" expanded="true" />
                 <element signature="e#835#836#0" expanded="true" />
                 <element signature="e#869#870#0" expanded="true" />
-=======
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="false" />
->>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -315,31 +250,18 @@
       <file leaf-file-name="PassengerDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Java/dao/PassengerDao.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-=======
-            <state vertical-scroll-proportion="12.548388">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
->>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< Updated upstream
       <file leaf-file-name="StationDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Java/dao/StationDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-=======
-      <file leaf-file-name="RequestTimetablePage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/webapp/RequestTimetablePage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -360,7 +282,6 @@
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0d217a97-6408-45c7-9d2c-7a388a3ce208/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
             <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
@@ -373,10 +294,6 @@
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-            <state vertical-scroll-proportion="-13.4838705">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
->>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -387,25 +304,9 @@
           </provider>
         </entry>
       </file>
-<<<<<<< Updated upstream
       <file leaf-file-name="finaltask_sbb.station" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/215d9a05/0d217a97-6408-45c7-9d2c-7a388a3ce208/finaltask_sbb.station">
           <provider editor-type-id="text-editor">
-=======
-      <file leaf-file-name="RequestStationPage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/webapp/RequestStationPage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/webapp/bootstrap/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
->>>>>>> Stashed changes
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
@@ -428,7 +329,6 @@
           </provider>
         </entry>
       </file>
-<<<<<<< Updated upstream
       <file leaf-file-name="PlaceDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Java/dao/PlaceDao.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -445,16 +345,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
               <folding />
-=======
-      <file leaf-file-name="AdminService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Java/service/AdminService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="144" column="52" selection-start-line="144" selection-start-column="52" selection-end-line="144" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
->>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -463,16 +353,10 @@
         <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/BaseEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-<<<<<<< Updated upstream
               <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="e#497#498#0" expanded="true" />
                 <element signature="e#525#526#0" expanded="true" />
-=======
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -488,7 +372,6 @@
       <projects_view />
     </option>
   </component>
-<<<<<<< Updated upstream
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -496,26 +379,6 @@
         <option value="$PROJECT_DIR$/src/Main/Java/entities/BaseEntity.java" />
         <option value="dbtable:/215d9a05/0d217a97-6408-45c7-9d2c-7a388a3ce208/finaltask_sbb.passenger" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0d217a97-6408-45c7-9d2c-7a388a3ce208/console_3.sql" />
-=======
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/Main/webapp/LoginRegistration.jsp" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="dbtable:/215d9a05/0d217a97-6408-45c7-9d2c-7a388a3ce208/finaltask_sbb.route" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/RequstRoutePage.jsp" />
-        <option value="$PROJECT_DIR$/src/Main/Java/servlets/RequestServletForRoutePage.java" />
-        <option value="$PROJECT_DIR$/src/Main/Java/entities/Route.java" />
-        <option value="$PROJECT_DIR$/src/Main/Java/servlets/PushServletForRoutePage.java" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/RequestRoutePage.jsp" />
-        <option value="$PROJECT_DIR$/src/Main/Java/entities/Train.java" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/RequestTimetablePage.jsp" />
-        <option value="$PROJECT_DIR$/src/Main/Java/servlets/RequestServletForTimetablePage.java" />
-        <option value="$PROJECT_DIR$/src/Main/Java/servlets/PushServletForTimetablePage.java" />
-        <option value="$PROJECT_DIR$/src/Main/Java/hibernate/MyHibernate.java" />
-        <option value="$PROJECT_DIR$/src/Main/Java/dao/AbstractDao.java" />
->>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/src/Main/Java/dao/TrainDao.java" />
         <option value="$PROJECT_DIR$/src/Main/Java/entities/Place.java" />
         <option value="$PROJECT_DIR$/src/Main/Java/entities/Passenger.java" />
@@ -523,36 +386,9 @@
         <option value="$PROJECT_DIR$/src/Main/Java/entities/Station.java" />
         <option value="$PROJECT_DIR$/src/Main/Java/entities/Ticket.java" />
         <option value="$PROJECT_DIR$/src/Main/Java/entities/Timetable.java" />
-<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/src/Main/Java/entities/Train.java" />
         <option value="$PROJECT_DIR$/src/Main/Java/entities/Trip.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0d217a97-6408-45c7-9d2c-7a388a3ce208/console.sql" />
-=======
-        <option value="$PROJECT_DIR$/src/Main/Java/service/AdminService.java" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/bootstrap/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/Style-1.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/Style-3.css.jsp" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/Style-3.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/MainPageStyle.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/StyleMainPage.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/Style-2.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/Join.html" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/images/Login.jsp" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/22.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/Style3333.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/Style3.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/Style2.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/RequestTrainPage.jsp" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/Style.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/Style1.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/Login.jsp" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/Registration.jsp" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/MainPage.jsp" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/css/style.css" />
-        <option value="$PROJECT_DIR$/src/Main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/Main/Java/entities/Passenger.java" />
->>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -744,32 +580,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FinalTask_SBB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FinalTask_SBB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1226,7 +1036,6 @@
       <workItem from="1482594133063" duration="1270000" />
       <workItem from="1482859714704" duration="2216000" />
       <workItem from="1482865267667" duration="1655000" />
-<<<<<<< Updated upstream
       <workItem from="1483347751670" duration="6299000" />
     </task>
     <servers />
@@ -1236,98 +1045,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-=======
-      <workItem from="1483347751670" duration="24886000" />
-      <workItem from="1483385771742" duration="1996000" />
-      <workItem from="1483437363324" duration="27420000" />
-      <workItem from="1483524660186" duration="23686000" />
-      <workItem from="1483617916982" duration="1847000" />
-      <workItem from="1483696252115" duration="17441000" />
-      <workItem from="1483782860726" duration="13172000" />
-      <workItem from="1483868974692" duration="21990000" />
-      <workItem from="1483982097361" duration="10810000" />
-      <workItem from="1484067697431" duration="8666000" />
-      <workItem from="1484155408095" duration="7066000" />
-      <workItem from="1484239987825" duration="7805000" />
-      <workItem from="1484390922808" duration="13731000" />
-      <workItem from="1484474967817" duration="5046000" />
-      <workItem from="1484480126710" duration="17493000" />
-      <workItem from="1484586544449" duration="5781000" />
-      <workItem from="1484674229022" duration="6134000" />
-      <workItem from="1484759287807" duration="3609000" />
-    </task>
-    <task id="LOCAL-00001" summary="add all methods and constructors for all PO -classes">
-      <created>1483360756252</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1483360756252</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added&#10;      AdminServiceForStation&#10;      AdminServiceForTrain&#10;      PushServletForStationPage&#10;      PushServletForTrainPage&#10;      RequestServletForStationPage&#10;      RequestServletForTrainPage&#10;      RequestStationPage.jsp&#10;      RequestTrainPage.jsp&#10;      ResponsePage.jsp&#10;">
-      <created>1483382870654</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1483382870654</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Merged AdminServiceForStation and AdminServiceForTrain, now we have only one AdminService.&#10;PushServletForStationPage and  PushServletForTrainPage was reworked, was added some check null reference and null content.&#10;RequestServletForStationPage and RequestServletForTrainPage code are more qualified, more clean.&#10;persistence.xml changed property create/validate.&#10;db-config changed property create/validate.&#10;RequestServletForStationPage and RequestServletForTrainPage are more qualified, more clean.&#10;&#10;&#10;&#10;">
-      <created>1483440978892</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1483440978892</updated>
-    </task>
-    <task id="LOCAL-00004" summary="In to AdminService was added new method addRoute.&#10;Created new classes PushServletForRoutePage and RequestServletForRoutePage.&#10;Created new RequestRoutePage.jsp&#10;&#10;&#10;">
-      <created>1483450874803</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1483450874803</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Some play with AdminService, which was added addTimetable.&#10;added PushServletForTimetablePage.&#10;added RequestServletTimetablePage.&#10;added  RequestTimetablePage.&#10;Some problems with TimeTable, which can added two time at station, and some problems with foreign Key Station_Id at Timetable.">
-      <created>1483551313166</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1483551313166</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Transactions was success reworked. Transactions was moved up from Dao to the AdminService.">
-      <created>1483563515075</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1483563515075</updated>
-    </task>
-    <task id="LOCAL-00007" summary="added getRouteByNumber by RouteDao.&#10;All methods by AdminService was reworked, was added some check on values in base.&#10;RequestMainServlet was added.&#10;Bootstrap was connected.&#10;Image folder, css folder with style-1.css was added.&#10;MainPage and was added.&#10;">
-      <created>1483888419734</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1483888419734</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added getRouteByNumber by RouteDao.&#10;All methods by AdminService was reworked, was added some check on values in base.&#10;RequestMainServlet was added.&#10;Bootstrap was connected.&#10;Image folder, css folder with style-1.css was added.&#10;MainPage and was added.&#10;">
-      <created>1483888705465</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1483888705465</updated>
-    </task>
-    <task id="LOCAL-00009" summary="View pages was added.">
-      <created>1484760393655</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1484760393655</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223720000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
->>>>>>> Stashed changes
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1343,11 +1060,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32906976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-<<<<<<< Updated upstream
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21275456" sideWeight="0.49386504" order="0" side_tool="false" content_ui="combo" />
->>>>>>> Stashed changes
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17363344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1375,22 +1088,6 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-<<<<<<< Updated upstream
-=======
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="add all methods and constructors for all PO -classes" />
-    <MESSAGE value="added&#10;      AdminServiceForStation&#10;      AdminServiceForTrain&#10;      PushServletForStationPage&#10;      PushServletForTrainPage&#10;      RequestServletForStationPage&#10;      RequestServletForTrainPage&#10;      RequestStationPage.jsp&#10;      RequestTrainPage.jsp&#10;      ResponsePage.jsp&#10;" />
-    <MESSAGE value="Merged AdminServiceForStation and AdminServiceForTrain, now we have only one AdminService.&#10;PushServletForStationPage and  PushServletForTrainPage was reworked, was added some check null reference and null content.&#10;RequestServletForStationPage and RequestServletForTrainPage code are more qualified, more clean.&#10;persistence.xml changed property create/validate.&#10;db-config changed property create/validate.&#10;RequestServletForStationPage and RequestServletForTrainPage are more qualified, more clean.&#10;&#10;&#10;&#10;" />
-    <MESSAGE value="In to AdminService was added new method addRoute.&#10;Created new classes PushServletForRoutePage and RequestServletForRoutePage.&#10;Created new RequestRoutePage.jsp&#10;&#10;&#10;" />
-    <MESSAGE value="Some play with AdminService, which was added addTimetable.&#10;added PushServletForTimetablePage.&#10;added RequestServletTimetablePage.&#10;added  RequestTimetablePage." />
-    <MESSAGE value="Some play with AdminService, which was added addTimetable.&#10;added PushServletForTimetablePage.&#10;added RequestServletTimetablePage.&#10;added  RequestTimetablePage.&#10;Some problems with TimeTable, which can added two time at station, and some problems with foreign Key Station_Id at Timetable." />
-    <MESSAGE value="Transactions was success reworked. Transactions was moved up from Dao to the AdminService." />
-    <MESSAGE value="added getRouteByNumber by RouteDao.&#10;All methods by AdminService was reworked, was added some check on values in base.&#10;RequestMainServlet was added.&#10;Bootstrap was connected.&#10;Image folder, css folder with style-1.css was added.&#10;MainPage and MainPage was added.&#10;" />
-    <MESSAGE value="added getRouteByNumber by RouteDao.&#10;All methods by AdminService was reworked, was added some check on values in base.&#10;RequestMainServlet was added.&#10;Bootstrap was connected.&#10;Image folder, css folder with style-1.css was added.&#10;MainPage and was added.&#10;" />
-    <MESSAGE value="View pages was added." />
-    <option name="LAST_COMMIT_MESSAGE" value="View pages was added." />
-  </component>
->>>>>>> Stashed changes
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -1400,7 +1097,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Station.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1441,9 +1137,6 @@
           <folding />
         </state>
       </provider>
-=======
-    <entry file="dbDummy://dbtable:/215d9a05/0d217a97-6408-45c7-9d2c-7a388a3ce208/finaltask_sbb.ticket">
->>>>>>> Stashed changes
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1705,35 +1398,8 @@
     <entry file="file://$PROJECT_DIR$/src/Main/Java/dao/TicketDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-<<<<<<< Updated upstream
           <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
           <folding />
-=======
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#984#985#0" expanded="false" />
-            <element signature="e#1030#1031#0" expanded="false" />
-            <element signature="e#1068#1069#0" expanded="false" />
-            <element signature="e#1102#1103#0" expanded="false" />
-            <element signature="e#1156#1157#0" expanded="false" />
-            <element signature="e#1202#1203#0" expanded="false" />
-            <element signature="e#1251#1252#0" expanded="false" />
-            <element signature="e#1287#1288#0" expanded="false" />
-            <element signature="e#1354#1355#0" expanded="false" />
-            <element signature="e#1404#1405#0" expanded="false" />
-            <element signature="e#1445#1446#0" expanded="false" />
-            <element signature="e#1477#1478#0" expanded="false" />
-            <element signature="e#1532#1533#0" expanded="false" />
-            <element signature="e#1574#1575#0" expanded="false" />
-            <element signature="e#1613#1614#0" expanded="false" />
-            <element signature="e#1644#1645#0" expanded="false" />
-            <element signature="e#1696#1697#0" expanded="false" />
-            <element signature="e#1736#1737#0" expanded="false" />
-            <element signature="e#1767#1768#0" expanded="false" />
-            <element signature="e#1801#1802#0" expanded="false" />
-          </folding>
->>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -1788,26 +1454,16 @@
         </state>
       </provider>
     </entry>
-<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/Main/Java/dao/TrainDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Main/Java/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="144" column="52" selection-start-line="144" selection-start-column="52" selection-end-line="144" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
->>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< Updated upstream
     <entry file="dbDummy://dbtable:/215d9a05/0d217a97-6408-45c7-9d2c-7a388a3ce208/finaltask_sbb.passenger">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1818,13 +1474,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6317756">
-          <caret line="64" column="31" selection-start-line="63" selection-start-column="49" selection-end-line="64" selection-end-column="31" />
-          <folding />
->>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -1835,36 +1484,17 @@
           <folding />
         </state>
       </provider>
-<<<<<<< Updated upstream
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-=======
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Java/servlets/RequestMainServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
->>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0d217a97-6408-45c7-9d2c-7a388a3ce208/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-=======
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
->>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -1884,7 +1514,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/Main/Java/dao/PlaceDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1894,9 +1523,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/BaseEntity.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/bootstrap/css/bootstrap.css">
->>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
@@ -1915,7 +1541,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Place.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1961,25 +1586,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Station.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/css/MyStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="184" column="22" selection-start-line="184" selection-start-column="22" selection-end-line="184" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/css/animate-custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/css/demo.css">
->>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
@@ -2004,22 +1610,14 @@
         </state>
       </provider>
     </entry>
-<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/RequestStationPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Trip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2061,58 +1659,10 @@
             <element signature="e#1188#1189#0" expanded="true" />
             <element signature="e#1230#1231#0" expanded="true" />
           </folding>
-=======
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/RequestTimetablePage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/RequestTrainPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.4838705">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.483871">
-          <caret line="202" column="1" selection-start-line="202" selection-start-column="1" selection-end-line="202" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/MainPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.193548">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/Login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.548388">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/webapp/LoginRegistration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-39.741936">
-          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-          <folding />
->>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Timetable.java">
-<<<<<<< Updated upstream
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5616622">
           <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
@@ -2125,30 +1675,6 @@
             <element signature="e#794#795#0" expanded="true" />
             <element signature="e#835#836#0" expanded="true" />
             <element signature="e#869#870#0" expanded="true" />
-=======
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Java/entities/Passenger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6819788">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
->>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
