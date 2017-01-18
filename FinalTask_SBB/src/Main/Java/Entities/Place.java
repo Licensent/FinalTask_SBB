@@ -54,4 +54,10 @@ public class Place extends BaseEntity implements Serializable {
     public void setTrip(Trip trip) {
         this.trip = trip;
     }
+
+    public String toString(){
+        return "Place Number: "+placeNumber+" Status: "+placeStatus+"\n";
+
+
+    }
 }

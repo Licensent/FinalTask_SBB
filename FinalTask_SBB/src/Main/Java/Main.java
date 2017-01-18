@@ -6,6 +6,7 @@ import entities.Passenger;
 import entities.Ticket;
 import entities.Timetable;
 import hibernate.MyHibernate;
+import service.AdminService;
 
 /**
  * Created by DarthVader on 24.12.2016.
@@ -44,6 +45,11 @@ public class Main {
         TimetableDao timetableDao = new TimetableDao();
         Timetable timetable = new Timetable();
         timetableDao.add(timetable);
+
+        AdminService adminService = new AdminService();
+//TODO
+       // System.out.println(adminService.setPlaces(5));
+
 
 
         MyHibernate.close();

@@ -8,10 +8,12 @@ import java.util.List;
  * Created by DarthVader on 14.12.2016.
  */
 @Entity
-@Table(name = "Station", uniqueConstraints = @UniqueConstraint(columnNames = "StationName"))
+@Table(name = "Station", uniqueConstraints = @UniqueConstraint(name = "UK_STATION_NAME", columnNames = Station.STATION_NAME))
 public class Station extends BaseEntity implements Serializable {
 
-    @Column(name = "StationName")
+    public static final String STATION_NAME = "StationName";
+
+    @Column(name = STATION_NAME)
     private String stationName;
 
     @OneToMany(mappedBy = "station")

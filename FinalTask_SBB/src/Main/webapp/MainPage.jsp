@@ -10,21 +10,26 @@
 <head>
     <title>Main Page</title>
     <link href="bootstrap/css/bootstrap.css" rel=stylesheet type="text/css">
-    <link href="css/Style-1.css" rel=stylesheet type="text/css">
-</head>
+    <link href="css/MyStyle.css" rel=stylesheet type="text/css">
+    </head>
 
 <body>
-<div id="homepage_header" class="home_header">
+
+<div class="home_header">
     <div id="home_header">
-        <img src="/images/background_header.png" width="253", height="80"
+        <img src="/images/background_header.png" width="253" , height="80"
              alt="Адрес размещения изображения относительно корня сайта">
     </div>
     <div id="IGRailways_logo">
         <img src="/images/logo_header.png" alt="IGRailways">
     </div>
 </div>
-
-<h2 align="right"><a href="addStation" class="btn btn-default btn-lg">Обычная ссылка</a></h2>
+<div class="loginBox">
+    <div id="buttons" class="btn-group">
+        <a href="Login.jsp" class="btn btn-link">Login</a>
+        <a href="index.jsp" class="btn btn-link">Join</a>
+    </div>
+</div>
 
 <h2 align="right"><a href="addStation">Station menu</a></h2>
 

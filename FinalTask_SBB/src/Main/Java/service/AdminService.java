@@ -1,16 +1,12 @@
 package service;
 
-import dao.RouteDao;
-import dao.StationDao;
-import dao.TimetableDao;
-import dao.TrainDao;
-import entities.Route;
-import entities.Station;
-import entities.Timetable;
-import entities.Train;
+import dao.*;
+import entities.*;
 import hibernate.MyHibernate;
 
 import javax.persistence.NoResultException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by DarthVader on 02.01.2017.
@@ -21,6 +17,7 @@ public class AdminService {
     private RouteDao routeDao = new RouteDao();
     private TrainDao trainDao = new TrainDao();
     private TimetableDao timetableDao = new TimetableDao();
+    private PlaceDao placeDao = new PlaceDao();
 
     public void addStation(String stationName) {
         MyHibernate.getEntityTransactionBegin();
@@ -29,14 +26,10 @@ public class AdminService {
 
         try {
             if (stationDao.getStationByName(stationName) == null) {
-
                 station = new Station(stationName);
-
                 stationDao.add(station);
             } else {
-
                 station = stationDao.getStationByName(stationName);
-
                 stationDao.update(station);
             }
             MyHibernate.getEntityTransactionCommit();
@@ -54,12 +47,12 @@ public class AdminService {
         Route route = null;
 
         try {
-            if (routeDao.getRouteByNumber(routeNumber) == null){
+            if (routeDao.getRouteByNumber(routeNumber) == null) {
 
                 route = new Route(routeNumber);
 
                 routeDao.add(route);
-            }else{
+            } else {
                 route = routeDao.getRouteByNumber(routeNumber);
 
                 routeDao.update(route);
@@ -67,37 +60,53 @@ public class AdminService {
             MyHibernate.getEntityTransactionCommit();
         } catch (Exception e) {
             e.printStackTrace();
-            if (MyHibernate.getEntityManager().getTransaction().isActive()){
+            if (MyHibernate.getEntityManager().getTransaction().isActive()) {
                 MyHibernate.getEntityManager().getTransaction().rollback();
             }
         }
     }
 
-    public void addTrain(int trainNumber) {
+    public void addTrain(int trainNumber, int totalPlaces) {
         MyHibernate.getEntityTransactionBegin();
 
         Train train = new Train();
         Route route = null;
+        List<Place> placeList = new ArrayList<>();
+        if (totalPlaces <= 10) {
+            placeList = setPlaces(10);
+        } else {
+            placeList = setPlaces(totalPlaces);
+        }
+
 
         try {
-            if (routeDao.getRouteByNumber(trainNumber) == null){
+            if (routeDao.getRouteByNumber(trainNumber) == null) {
 
                 route = new Route(trainNumber);
 
                 routeDao.add(route);
                 train.setRoute(route);
                 trainDao.add(train);
-            }else{
+                for (Place place : placeList) {
+                    place.setTrain(train);
+                    placeDao.add(place);
+                }
+
+            } else {
 
                 route = routeDao.getRouteByNumber(trainNumber);
 
                 train.setRoute(route);
                 trainDao.add(train);
+                for (Place place : placeList) {
+                    place.setTrain(train);
+                    placeDao.add(place);
+                }
             }
             MyHibernate.getEntityTransactionCommit();
         } catch (Exception e) {
             e.printStackTrace();
-            if (MyHibernate.getEntityManager().getTransaction().isActive()){
+            if (MyHibernate.getEntityManager().getTransaction().isActive()) {
                 MyHibernate.getEntityManager().getTransaction().rollback();
             }
         }
@@ -118,7 +127,6 @@ public class AdminService {
                 timetable.setStation(stationName);
                 timetableDao.add(timetable);
             } else {
-
                 stationName = stationDao.getStationByName(timetableForStationName);
 
                 timetable.setStation(stationName);
@@ -132,5 +140,16 @@ public class AdminService {
             }
         }
 
+    }
+
+    private List<Place> setPlaces(int totalPlaces) {
+        List<Place> placeList = new ArrayList<>();
+        for (int i = 1; i <= totalPlaces; i++) {
+            Place place = new Place();
+            place.setPlaceStatus("Free");
+            place.setPlaceNumber(i);
+            placeList.add(place);
+        }
+        return placeList;
     }
 }

@@ -20,20 +20,25 @@ public class PushServletForTrainPage extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        String stringNameTrain = null;
+        String stringTrainNumber = null;
+        String stringTrainPlaces = null;
 
         try {
-            stringNameTrain = req.getParameter("trainNumber");
+            stringTrainNumber = req.getParameter("trainNumber");
+            stringTrainPlaces = req.getParameter("trainPlaces");
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        if (stringNameTrain == null || stringNameTrain.isEmpty()) {
+        if (stringTrainNumber == null || stringTrainNumber.isEmpty()
+                || stringTrainPlaces == null || stringTrainPlaces.isEmpty()) {
             req.setAttribute("operationStatus", "The Object hasn't been added. " +
                     "Please, enter train number again.");
         } else {
-            Integer trainNumber = Integer.parseInt(stringNameTrain);
-            adminTrain.addTrain(trainNumber);
+            Integer trainNumber = Integer.parseInt(stringTrainNumber);
+            Integer trainPlaces = Integer.parseInt(stringTrainPlaces);
+
+            adminTrain.addTrain(trainNumber, trainPlaces);
             req.setAttribute("operationStatus", "The Object has been successfully added.");
 
         }
